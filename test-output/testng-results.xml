@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Test Report" duration-ms="22677" started-at="2021-04-25T09:42:31Z" finished-at="2021-04-25T09:42:54Z">
+    <groups>
+    </groups>
+    <test name="Automation Test Report" duration-ms="22677" started-at="2021-04-25T09:42:31Z" finished-at="2021-04-25T09:42:54Z">
+      <class name="orange.crm.CRMRunner.CRMRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="131" started-at="2021-04-25T15:12:31Z" finished-at="2021-04-25T15:12:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="22278" started-at="2021-04-25T15:12:32Z" data-provider="features" finished-at="2021-04-25T15:12:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC003_Orange_CRM_LoginAsDifferentUser"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeCRM LoginAsDifferentUser Test cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="24" started-at="2021-04-25T15:12:54Z" finished-at="2021-04-25T15:12:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- orange.crm.CRMRunner.CRMRunner -->
+    </test> <!-- Automation Test Report -->
+  </suite> <!-- Automation Test Report -->
+</testng-results>
