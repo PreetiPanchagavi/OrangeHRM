@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Automation Test Report</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 25 15:12:31 IST 2021</td>
+<td>Started on:</td><td>Tue May 11 22:12:08 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22677 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19812 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='orange.crm.CRMRunner.CRMRunner.feature()'><b>feature</b><br>Test class: orange.crm.CRMRunner.CRMRunner<br>Parameters: "TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases"</td>
-<td></td>
-<td>22</td>
+<td><div><pre>java.lang.NullPointerException
+	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:84)
+	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:116)
+	at ?.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeForgotPassward.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace562685863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace562685863'><pre>java.lang.NullPointerException
+	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:84)
+	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:116)
+	at ?.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeForgotPassward.feature:16)
+</pre></div></td>
+<td>19</td>
 <td>orange.crm.CRMRunner.CRMRunner@6d8a00e3</td></tr>
 </table><p>
 </body>

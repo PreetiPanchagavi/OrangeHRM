@@ -9,4 +9,15 @@
       <class name="orange.crm.CRMRunner.CRMRunner"/>
     </classes>
   </test> <!-- Automation Test Report -->
+  <test name="Automation Test Report(failed)">
+    <classes>
+      <class name="orange.crm.CRMRunner.CRMRunner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- orange.crm.CRMRunner.CRMRunner -->
+    </classes>
+  </test> <!-- Automation Test Report(failed) -->
 </suite> <!-- Failed suite [Automation Test Report] -->

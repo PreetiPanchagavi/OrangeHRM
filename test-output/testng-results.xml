@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Report" duration-ms="22677" started-at="2021-04-25T09:42:31Z" finished-at="2021-04-25T09:42:54Z">
+  <suite name="Automation Test Report" duration-ms="19812" started-at="2021-05-11T16:42:08Z" finished-at="2021-05-11T16:42:28Z">
     <groups>
     </groups>
-    <test name="Automation Test Report" duration-ms="22677" started-at="2021-04-25T09:42:31Z" finished-at="2021-04-25T09:42:54Z">
+    <test name="Automation Test Report" duration-ms="19812" started-at="2021-05-11T16:42:08Z" finished-at="2021-05-11T16:42:28Z">
       <class name="orange.crm.CRMRunner.CRMRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="131" started-at="2021-04-25T15:12:31Z" finished-at="2021-04-25T15:12:31Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="113" started-at="2021-05-11T22:12:09Z" finished-at="2021-05-11T22:12:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="22278" started-at="2021-04-25T15:12:32Z" data-provider="features" finished-at="2021-04-25T15:12:54Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="19471" started-at="2021-05-11T22:12:09Z" data-provider="features" finished-at="2021-05-11T22:12:28Z">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,19 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:84)
+	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:116)
+	at ✽.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeForgotPassward.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="24" started-at="2021-04-25T15:12:54Z" finished-at="2021-04-25T15:12:54Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2021-05-11T22:12:28Z" finished-at="2021-05-11T22:12:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
