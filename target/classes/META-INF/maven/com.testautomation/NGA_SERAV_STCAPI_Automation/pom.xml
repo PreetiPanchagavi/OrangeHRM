@@ -4,8 +4,8 @@
     <groupId>com.testautomation</groupId>
     <artifactId>NGA_SERAV_STCAPI_Automation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>NGA_SERAV_STCAPI_Automation</name>
-    <description>NGA_SERAV_STCAPI_Automation</description>
+   <name>Orange_CRM</name>
+    <description>Orange_CRM_Automation</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

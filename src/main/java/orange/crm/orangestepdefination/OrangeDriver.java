@@ -140,6 +140,7 @@ public class OrangeDriver extends ExtentReportListener{
 	        ExtentTest logInfo = null;
 	        try {
 	            logInfo = object.logsHandlerWeb(stepDescription, "Click On", webDriver);
+	            
 	            WebElement elt = object.locatorsfetch(locator, webDriver, filePath, sheetName);
 	            WebDriverWait wait = new WebDriverWait(webDriver, 30);
 	            WebElement elt1 = wait.until(ExpectedConditions.elementToBeClickable(elt));
@@ -159,6 +160,7 @@ public class OrangeDriver extends ExtentReportListener{
 	            WebElement elt1 = wait.until(ExpectedConditions.visibilityOf(elt));
 	            System.out.println("Get Text===>" +elt1.getText());
 	            soft.assertEquals(elt1.getText(), appTestData.get("value"));
+	            soft.assertAll();
 	        } catch (AssertionError | Exception e) {
 	            testStepHandle("FAIL", webDriver, logInfo, e);
 	        }
