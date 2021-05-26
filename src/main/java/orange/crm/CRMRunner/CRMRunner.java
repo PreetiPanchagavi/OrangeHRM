@@ -11,7 +11,7 @@ import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "./ORANGE_CRM/Orange/TestCases", glue = { "orange.crm.orangestepdefination" }, tags = {
-        "~@OrangeLoginFunctionality, @OrangeForgotPasswordFunctionality" }, monochrome = true)
+        "@OrangeLoginFunctionality, @OrangeForgotPasswordFunctionality" }, monochrome = true)
 
 
 //If you don't want to run any feature file use the symbol "~"

@@ -22,8 +22,9 @@ public class WiniumHandler extends ExtentReportListener {
     public static Logger logger = Logger.getLogger(WiniumHandler.class);
 
     public WebElement winiumLocators(String row, WiniumDriver Winumdriver, String filePath, String sheetName) throws Exception {
-        String rowid = row.replaceAll("\\.", "");
-
+       System.out.println("winiumLocators===>" +row);
+    	String rowid = row.replaceAll("\\.", "");
+        System.out.println("winiumLocators rowid===>" +rowid);
         Map<String, String> TestDataInMap = ExcelHandler.getTestDataInMap(filePath, sheetName, rowid);
 
         String locatorValue = TestDataInMap.get("locatorValue");
@@ -139,10 +140,10 @@ public class WiniumHandler extends ExtentReportListener {
     }
 
     public WebElement locatorsfetch(String row, WebDriver driver, String filePath, String sheetName) throws Exception {
-        String rowid = row.replaceAll("\\.", "");
+ 
+    	String rowid = row.replaceAll("\\.", "");
 
         Map<String, String> TestDataInMap = ExcelHandler.getTestDataInMap(filePath, sheetName, rowid);
-
         String locatorValue = TestDataInMap.get("locatorValue");
         String locatorType = TestDataInMap.get("locatorType");
         logger.info("Searching web locator in sheet " + filePath + "//" + sheetName);

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,29 @@
                     <div class="method-list-content failed suite-Automation_Test_Report">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Test_Report" title="orange.crm.CRMRunner.CRMRunner" hash-for-method="feature(&quot;TC003_Orange_CRM_LoginAsDifferentUser&quot;, &quot;OrangeCRM LoginAsDifferentUser Test cases&quot;)">feature("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Test_Report" title="orange.crm.CRMRunner.CRMRunner" hash-for-method="feature(&quot;TC001_Orange_CRM_LoginWithvalidCredentials&quot;, &quot;OrangeCRM Login Test cases&quot;)">feature("TC001_Orange_CRM_LoginWithvalidCredentials", "OrangeCRM Login Test cases")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Automation_Test_Report -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Automation_Test_Report" class="hide-methods skipped suite-Automation_Test_Report"> (hide)</a> <!-- hide-methods skipped suite-Automation_Test_Report -->
+                      <a href="#" panel-name="suite-Automation_Test_Report" class="show-methods skipped suite-Automation_Test_Report"> (show)</a> <!-- show-methods skipped suite-Automation_Test_Report -->
+                    </span>
+                    <div class="method-list-content skipped suite-Automation_Test_Report">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Test_Report" title="orange.crm.CRMRunner.CRMRunner" hash-for-method="feature(&quot;TC002_Orange_CRM_LoginWithInvalidCredentials&quot;, &quot;OrangeCRM Login Test cases&quot;)">feature("TC002_Orange_CRM_LoginWithInvalidCredentials", "OrangeCRM Login Test cases")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Test_Report" title="orange.crm.CRMRunner.CRMRunner" hash-for-method="feature(&quot;TC003_Orange_CRM_LoginAsDifferentUser&quot;, &quot;OrangeCRM LoginAsDifferentUser Test cases&quot;)">feature("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Automation_Test_Report -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -125,20 +144,74 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(&quot;TC003_Orange_CRM_LoginAsDifferentUser&quot;, &quot;OrangeCRM LoginAsDifferentUser Test cases&quot;)">
-                  </a> <!-- feature("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases") -->
+                  <a name="feature(&quot;TC001_Orange_CRM_LoginWithvalidCredentials&quot;, &quot;OrangeCRM Login Test cases&quot;)">
+                  </a> <!-- feature("TC001_Orange_CRM_LoginWithvalidCredentials", "OrangeCRM Login Test cases") -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases")</span>
+                  <span class="parameters">("TC001_Orange_CRM_LoginWithvalidCredentials", "OrangeCRM Login Test cases")</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:84)
-	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:116)
-	at ✽.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeForgotPassward.feature:16)
+	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:109)
+	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:119)
+	at ✽.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeCRMLogin.feature:20)
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automation_Test_Report-class-failed -->
+          <div class="suite-Automation_Test_Report-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">orange.crm.CRMRunner.CRMRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(&quot;TC002_Orange_CRM_LoginWithInvalidCredentials&quot;, &quot;OrangeCRM Login Test cases&quot;)">
+                  </a> <!-- feature("TC002_Orange_CRM_LoginWithInvalidCredentials", "OrangeCRM Login Test cases") -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">("TC002_Orange_CRM_LoginWithInvalidCredentials", "OrangeCRM Login Test cases")</span>
+                  <div class="stack-trace">org.testng.SkipException: TC002_Orange_CRM_LoginWithInvalidCredentials
+	at orange.crm.orangestepdefination.OrangeDriver.before(OrangeDriver.java:63)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:40)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at orange.crm.CRMRunner.CRMRunner.feature(CRMRunner.java:33)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(&quot;TC003_Orange_CRM_LoginAsDifferentUser&quot;, &quot;OrangeCRM LoginAsDifferentUser Test cases&quot;)">
+                  </a> <!-- feature("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases") -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases")</span>
+                  <div class="stack-trace">org.testng.SkipException: TC003_Orange_CRM_LoginAsDifferentUser
+	at orange.crm.orangestepdefination.OrangeDriver.before(OrangeDriver.java:63)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:40)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at orange.crm.CRMRunner.CRMRunner.feature(CRMRunner.java:33)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Test_Report-class-skipped -->
         </div> <!-- panel Automation_Test_Report -->
         <div panel-name="test-xml-Automation_Test_Report" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -194,16 +267,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'orange.crm.CRMRunner.CRMRunner')
-data.setCell(0, 3, 19471);
+data.setCell(0, 3, 17879);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'orange.crm.CRMRunner.CRMRunner')
+data.setCell(1, 3, 28);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'orange.crm.CRMRunner.CRMRunner')
+data.setCell(2, 3, 20);
 window.suiteTableData['Automation_Test_Report']= { tableData: data, tableDiv: 'times-div-Automation_Test_Report'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Automation_Test_Report">
               </div> <!-- times-div-Automation_Test_Report -->
             </div> <!-- times-div -->
@@ -237,12 +318,20 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">feature("TC001_Orange_CRM_LoginWithvalidCredentials", "OrangeCRM Login Test cases")</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature("TC002_Orange_CRM_LoginWithInvalidCredentials", "OrangeCRM Login Test cases")</span>
+                <span class="method-start">18006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">feature("TC003_Orange_CRM_LoginAsDifferentUser", "OrangeCRM LoginAsDifferentUser Test cases")</span>
-                <span class="method-start">151 ms</span>
+                <span class="method-start">18034 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19622 ms</span>
+                <span class="method-start">18054 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

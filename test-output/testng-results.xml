@@ -1,17 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="2" failed="1" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Report" duration-ms="19812" started-at="2021-05-11T16:42:08Z" finished-at="2021-05-11T16:42:28Z">
+  <suite name="Automation Test Report" duration-ms="18224" started-at="2021-05-26T16:42:39Z" finished-at="2021-05-26T16:42:57Z">
     <groups>
     </groups>
-    <test name="Automation Test Report" duration-ms="19812" started-at="2021-05-11T16:42:08Z" finished-at="2021-05-11T16:42:28Z">
+    <test name="Automation Test Report" duration-ms="18224" started-at="2021-05-26T16:42:39Z" finished-at="2021-05-26T16:42:57Z">
       <class name="orange.crm.CRMRunner.CRMRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="113" started-at="2021-05-11T22:12:09Z" finished-at="2021-05-11T22:12:09Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="91" started-at="2021-05-26T22:12:39Z" finished-at="2021-05-26T22:12:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="19471" started-at="2021-05-11T22:12:09Z" data-provider="features" finished-at="2021-05-11T22:12:28Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="17879" started-at="2021-05-26T22:12:40Z" data-provider="features" finished-at="2021-05-26T22:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001_Orange_CRM_LoginWithvalidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeCRM Login Test cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:109)
+	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:119)
+	at ✽.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeCRMLogin.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="28" started-at="2021-05-26T22:12:57Z" data-provider="features" finished-at="2021-05-26T22:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC002_Orange_CRM_LoginWithInvalidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeCRM Login Test cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[TC002_Orange_CRM_LoginWithInvalidCredentials]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: TC002_Orange_CRM_LoginWithInvalidCredentials
+	at orange.crm.orangestepdefination.OrangeDriver.before(OrangeDriver.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:40)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at orange.crm.CRMRunner.CRMRunner.feature(CRMRunner.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="20" started-at="2021-05-26T22:12:57Z" data-provider="features" finished-at="2021-05-26T22:12:57Z">
           <params>
             <param index="0">
               <value>
@@ -24,19 +114,59 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[TC003_Orange_CRM_LoginAsDifferentUser]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at orange.crm.Listeners.ExtentReportListener.testStepHandleNoDriver(ExtentReportListener.java:84)
-	at orange.crm.orangestepdefination.OrangeDriver.exitWebDriver(OrangeDriver.java:116)
-	at ✽.Close the OrangeCRM Web Application(./ORANGE_CRM/Orange/TestCases/OrangeForgotPassward.feature:16)
+              <![CDATA[org.testng.SkipException: TC003_Orange_CRM_LoginAsDifferentUser
+	at orange.crm.orangestepdefination.OrangeDriver.before(OrangeDriver.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:40)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at orange.crm.CRMRunner.CRMRunner.feature(CRMRunner.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2021-05-11T22:12:28Z" finished-at="2021-05-11T22:12:28Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2021-05-26T22:12:57Z" finished-at="2021-05-26T22:12:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

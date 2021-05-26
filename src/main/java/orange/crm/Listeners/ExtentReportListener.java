@@ -33,6 +33,31 @@ public class ExtentReportListener {
     public static String getCurrentTime() {
         return new SimpleDateFormat("HH-mm-ss").format(new Date());
     }
+    public static void testStepHandle(String teststatus, WebDriver driver, ExtentTest extenttest, Throwable throwable) {
+        switch (teststatus) {
+        case "FAIL":
+            extenttest.fail(MarkupHelper.createLabel("Test Case is Failed : ", ExtentColor.RED));
+            extenttest.error(throwable.fillInStackTrace());
+
+            try {
+                extenttest.addScreenCaptureFromPath(captureScreenShot(driver));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            if (driver != null) {
+                driver.quit();
+            }
+            break;
+
+        case "PASS":
+            extenttest.pass(MarkupHelper.createLabel("Test Case is Passed : ", ExtentColor.GREEN));
+            break;
+
+        default:
+            break;
+        }
+    }
 
     public static ExtentReports setUp() {
         String reportLocation = reportPath + "/ExtentReport.html";
@@ -52,7 +77,7 @@ public class ExtentReportListener {
         return extent;
     }
 
-    public static void testStepHandle(String teststatus, WebDriver driver, ExtentTest extenttest, Throwable throwable) {
+    public static void webDriver(String teststatus, WebDriver driver, ExtentTest extenttest, Throwable throwable) {
         switch (teststatus) {
         case "FAIL":
             extenttest.fail(MarkupHelper.createLabel("Test Case is Failed : ", ExtentColor.RED));

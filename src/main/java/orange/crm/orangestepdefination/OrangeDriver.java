@@ -1,9 +1,11 @@
 package orange.crm.orangestepdefination;
 
 import java.net.MalformedURLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -47,7 +49,7 @@ public class OrangeDriver extends ExtentReportListener{
 	    
 	    SoftAssert soft = new SoftAssert();
 
-	    @Before()
+	    @Before(value="@OrangeLoginFunctionality, @OrangeForgotPasswordFunctionality")
 	    public void before(Scenario scenario) throws Exception {
 	        String scenarioName = scenario.getName();	       
 	        scenarioNames = scenarioName;
@@ -108,6 +110,7 @@ public class OrangeDriver extends ExtentReportListener{
 	    }
 	   @Then("Close the OrangeCRM Web Application")
 	    public void exitWebDriver() throws Exception {
+		   logger.info(stepDescription);
 	        ExtentTest logInfo = null;
 	        try {
 	            logInfo = object.logsHandlerWeb(stepDescription, "Close the Application", webDriver);
@@ -124,6 +127,7 @@ public class OrangeDriver extends ExtentReportListener{
 	   @Then("Enter value {string} in {string} web")
 	    public void enterValueWeb(String value, String locator) throws MalformedURLException {
 	        ExtentTest logInfo = null;
+	        logger.info(stepDescription);
 	        try {
 	            logInfo = object.logsHandlerWeb(stepDescription, "Enter value", webDriver);
 	            WebElement elt = object.locatorsfetch(locator, webDriver, filePath, sheetName);
@@ -132,12 +136,14 @@ public class OrangeDriver extends ExtentReportListener{
 	            elt1.clear();
 	            elt1.sendKeys(appTestData.get(value));
 	        } catch (AssertionError | Exception e) {
+	        	e.printStackTrace();
 	            testStepHandle("FAIL", webDriver, logInfo, e);
 	        }
 	    }
 	   @Then("Click on element {string}")
 	    public void clickOnElement(String locator) throws MalformedURLException {
 	        ExtentTest logInfo = null;
+	        logger.info(stepDescription);
 	        try {
 	            logInfo = object.logsHandlerWeb(stepDescription, "Click On", webDriver);
 	            
@@ -146,6 +152,7 @@ public class OrangeDriver extends ExtentReportListener{
 	            WebElement elt1 = wait.until(ExpectedConditions.elementToBeClickable(elt));
 	            elt1.click();
 	        } catch (AssertionError | Exception e) {
+	        	e.printStackTrace();
 	            testStepHandle("FAIL", webDriver, logInfo, e);
 	        }
 	    }
@@ -153,17 +160,54 @@ public class OrangeDriver extends ExtentReportListener{
 	   @Then("Get Text from element {string} {string}")
 	    public void getTextWebelement(String locator, String value) throws MalformedURLException {
 	        ExtentTest logInfo = null;
+	        logger.info(stepDescription);
 	        try {
 	            logInfo = object.logsHandlerWeb(stepDescription, "Get Text", webDriver);
 	            WebElement elt = object.locatorsfetch(locator, webDriver, filePath, sheetName);
 	            WebDriverWait wait = new WebDriverWait(webDriver, 30);
 	            WebElement elt1 = wait.until(ExpectedConditions.visibilityOf(elt));
 	            System.out.println("Get Text===>" +elt1.getText());
-	            soft.assertEquals(elt1.getText(), appTestData.get("value"));
+	            soft.assertEquals(elt1.getText(), appTestData.get(value));
 	            soft.assertAll();
 	        } catch (AssertionError | Exception e) {
+	        	e.printStackTrace();
+	            testStepHandle("FAIL", webDriver, logInfo, e);
+	        }
+	    }
+	   
+	   public static String parentWindow;
+	   
+	   @Then("Switch to window child window {string}")
+	    public void switchWindow(String value) throws MalformedURLException {
+	        ExtentTest logInfo = null;
+	        logger.info(stepDescription);
+	        try {
+	            logInfo = object.logsHandlerWeb(stepDescription, "Switch child window", webDriver);
+	          int i=  Integer.parseInt(value);
+	             parentWindow = webDriver.getWindowHandle();
+	          Set<String> childWindow = webDriver.getWindowHandles();
+	          ArrayList<String> array = new ArrayList<String>(childWindow);
+	          webDriver.switchTo().window(array.get(i));
+	          
+	        } catch (AssertionError | Exception e) {
+	        	e.printStackTrace();
+	            testStepHandle("FAIL", webDriver, logInfo, e);
+	        }
+	    }
+	   
+	   @Then("Switch to window parent window {string}")
+	    public void switchWindowParentWindow(String value) throws MalformedURLException {
+	        ExtentTest logInfo = null;
+	        logger.info(stepDescription);
+	        try {
+	            logInfo = object.logsHandlerWeb(stepDescription, "Switch parent window", webDriver);
+	       
+	          webDriver.switchTo().window(parentWindow);
+	          
+	        } catch (AssertionError | Exception e) {
+	        	e.printStackTrace();
 	            testStepHandle("FAIL", webDriver, logInfo, e);
 	        }
 	    }
 
-}
+}	
