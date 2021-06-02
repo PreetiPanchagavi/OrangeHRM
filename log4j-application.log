@@ -155,4 +155,12 @@
  2021-05-26 22:12:57,889  INFO [main] OrangeDriver:113 - Close the Orange CRM web application
  2021-05-26 22:12:57,928  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
  2021-05-26 22:12:57,948  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
+ 2021-06-02 17:07:36,024  INFO [main] OrangeDriver:74 - AppTestData:{HomePage=Dashboard, LoginPage_Title=OrangeHRM Demo, Password=admin123, TestCaseId=TC001_Orange_CRM_LoginWithvalidCredentials, Username=admin, Validation_Popup=}
+ 2021-06-02 17:07:36,026  INFO [main] OrangeDriver:66 - SCENARIO STARTED ####TC001_Orange_CRM_LoginWithvalidCredentials
+ 2021-06-02 17:07:39,066  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
+ 2021-06-02 17:07:39,093  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
+ 2021-06-02 17:08:10,487  INFO [main] OrangeDriver:74 - AppTestData:{HomePage=Dashboard, LoginPage_Title=OrangeHRM Demo, Password=admin123, TestCaseId=TC001_Orange_CRM_LoginWithvalidCredentials, Username=admin, Validation_Popup=}
+ 2021-06-02 17:08:10,489  INFO [main] OrangeDriver:66 - SCENARIO STARTED ####TC001_Orange_CRM_LoginWithvalidCredentials
+ 2021-06-02 17:08:12,661  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
+ 2021-06-02 17:08:12,690  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
  
