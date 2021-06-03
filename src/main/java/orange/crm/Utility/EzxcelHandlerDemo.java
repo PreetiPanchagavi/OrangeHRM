@@ -17,8 +17,8 @@ public class EzxcelHandlerDemo {
     final static Logger logger = Logger.getLogger(OrangeDriver.class);
     TestDataHandler testdata = new TestDataHandler();
 
-    public static Map<String, String> getTestDataInMap(String testDataFile, String sheetName, String testCaseId) throws Exception {
-    	String testid = testCaseId.replaceAll("\\.", "");
+    public static Map<String, String> getTestDataInMap(String testDataFilePath, String sheetName, String scenarioName) throws Exception {
+    	String testid = scenarioName.replaceAll("\\.", "");
     	System.out.println("testid==> " +testid);
         Map<String, String> TestDataInMap = new TreeMap<String, String>();
         String query = null;
@@ -27,7 +27,7 @@ public class EzxcelHandlerDemo {
         Connection conn = null;
         Recordset recordset = null;
         try {
-            conn = fillo.getConnection(testDataFile);
+            conn = fillo.getConnection(testDataFilePath);
             recordset = conn.executeQuery(query);
             // recordset=((com.codoid.products.fillo.Connection) conn).executeQuery(query);
             while (recordset.next()) {
@@ -36,10 +36,10 @@ public class EzxcelHandlerDemo {
                 }
             }
         } catch (Exception e) {
-            if (testDataFile.contains("TestSet.xlsx")) {
-                logger.error("Test scenario not found for " + testid + " in sheet " + testDataFile);
+            if (testDataFilePath.contains("TestSet.xlsx")) {
+                logger.error("Test scenario not found for " + testid + " in sheet " + testDataFilePath);
             } else {
-                logger.error("Test data not found for " + testid + " in sheet " + testDataFile);
+                logger.error("Test data not found for " + testid + " in sheet " + testDataFilePath);
             }
 
             // throw new Exception("Test data cannot find for " + testid + " in sheet " + testDataFile);

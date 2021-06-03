@@ -34,6 +34,7 @@ import orange.crm.Utility.WiniumHandler;
 
 public class OrangeDriver extends ExtentReportListener{
     final static Logger logger = Logger.getLogger(OrangeDriver.class);
+    public static String userDir;
 
     WiniumHandler object = new WiniumHandler();
 	OrangeCRMPropertiesFileReader crmProperties = new OrangeCRMPropertiesFileReader();
@@ -51,6 +52,13 @@ public class OrangeDriver extends ExtentReportListener{
 
 	    @Before(value="@OrangeLoginFunctionality, @OrangeForgotPasswordFunctionality")
 	    public void before(Scenario scenario) throws Exception {
+	    	userDir = System.getProperty("user.dir");
+	    	System.out.println("directory=======>"  +userDir);
+	    	System.out.println("hi===>" +crmproperties.getProperty("applicationDateFilePath"));
+	    	System.out.println("hi===>" +crmproperties.getProperty("uiMapFilePath"));
+	    	System.out.println("hi===>" +crmproperties.getProperty("testSetFilePath"));
+	    	
+	    	
 	        String scenarioName = scenario.getName();	       
 	        scenarioNames = scenarioName;
 	        System.out.println("scenarioName===>"  +scenarioName);

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" total="3" passed="0">
+<testng-results skipped="2" failed="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Report" duration-ms="3164" started-at="2021-06-02T11:38:09Z" finished-at="2021-06-02T11:38:12Z">
+  <suite name="Automation Test Report" duration-ms="22785" started-at="2021-06-03T10:20:15Z" finished-at="2021-06-03T10:20:37Z">
     <groups>
     </groups>
-    <test name="Automation Test Report" duration-ms="3164" started-at="2021-06-02T11:38:09Z" finished-at="2021-06-02T11:38:12Z">
+    <test name="Automation Test Report" duration-ms="22785" started-at="2021-06-03T10:20:15Z" finished-at="2021-06-03T10:20:37Z">
       <class name="orange.crm.CRMRunner.CRMRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="98" started-at="2021-06-02T17:08:09Z" finished-at="2021-06-02T17:08:09Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="setUpClass" is-config="true" duration-ms="104" started-at="2021-06-03T15:50:15Z" finished-at="2021-06-03T15:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="2796" started-at="2021-06-02T17:08:09Z" data-provider="features" finished-at="2021-06-02T17:08:12Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="22343" started-at="2021-06-03T15:50:15Z" data-provider="features" finished-at="2021-06-03T15:50:37Z">
           <params>
             <param index="0">
               <value>
@@ -24,20 +24,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at orange.crm.Listeners.ExtentReportListener.captureScreenShot(ExtentReportListener.java:127)
-	at orange.crm.Listeners.ExtentReportListener.testStepHandle(ExtentReportListener.java:43)
-	at orange.crm.orangestepdefination.OrangeDriver.launchWebApplication(OrangeDriver.java:95)
-	at ✽.Launch browser and enter orange crm url for ScenarioId "TC001_Orange_CRM_LoginWithvalidCredentials"(./ORANGE_CRM/Orange/TestCases/OrangeCRMLogin.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="34" started-at="2021-06-02T17:08:12Z" data-provider="features" finished-at="2021-06-02T17:08:12Z">
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="51" started-at="2021-06-03T15:50:37Z" data-provider="features" finished-at="2021-06-03T15:50:37Z">
           <params>
             <param index="0">
               <value>
@@ -102,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="28" started-at="2021-06-02T17:08:12Z" data-provider="features" finished-at="2021-06-02T17:08:12Z">
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="feature" duration-ms="23" started-at="2021-06-03T15:50:37Z" data-provider="features" finished-at="2021-06-03T15:50:37Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +157,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2021-06-02T17:08:12Z" finished-at="2021-06-02T17:08:12Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:orange.crm.CRMRunner.CRMRunner@6d8a00e3]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2021-06-03T15:50:37Z" finished-at="2021-06-03T15:50:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

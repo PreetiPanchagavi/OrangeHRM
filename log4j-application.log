@@ -163,4 +163,54 @@
  2021-06-02 17:08:10,489  INFO [main] OrangeDriver:66 - SCENARIO STARTED ####TC001_Orange_CRM_LoginWithvalidCredentials
  2021-06-02 17:08:12,661  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
  2021-06-02 17:08:12,690  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
+ 2021-06-03 15:42:56,731  INFO [main] OrangeDriver:74 - AppTestData:{HomePage=Dashboard, LoginPage_Title=OrangeHRM Demo, Password=admin123, TestCaseId=TC001_Orange_CRM_LoginWithvalidCredentials, Username=admin, Validation_Popup=}
+ 2021-06-03 15:42:56,732  INFO [main] OrangeDriver:66 - SCENARIO STARTED ####TC001_Orange_CRM_LoginWithvalidCredentials
+ 2021-06-03 15:43:09,200  INFO [main] OrangeDriver:163 - Verify user is on Login Page
+ 2021-06-03 15:43:09,402  INFO [main] ExcelHandler:24 - Get locator for Login_Page_Text in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:43:09,445  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:43:09,446  INFO [main] WiniumHandler:150 - Get webelement xpath locator for //h3[contains(text(),'OrangeHRM Demo')]
+ 2021-06-03 15:43:09,560  INFO [main] OrangeDriver:130 - Clear the Username from CRM login page which is already there in field and Enter new one
+ 2021-06-03 15:43:09,718  INFO [main] ExcelHandler:24 - Get locator for Username_Element in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:43:09,741  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:43:09,741  INFO [main] WiniumHandler:150 - Get webelement id locator for txtUsername
+ 2021-06-03 15:43:09,971  INFO [main] OrangeDriver:130 - Clear the Password from CRM login page which is already there in field and Enter new one
+ 2021-06-03 15:43:10,379  INFO [main] ExcelHandler:24 - Get locator for Password_Element in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:43:10,404  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:43:10,404  INFO [main] WiniumHandler:150 - Get webelement id locator for txtPassword
+ 2021-06-03 15:43:10,526  INFO [main] OrangeDriver:146 - Click on Login Button
+ 2021-06-03 15:43:10,959  INFO [main] ExcelHandler:24 - Get locator for Login in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:43:10,979  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:43:10,980  INFO [main] WiniumHandler:150 - Get webelement id locator for btnLogin
+ 2021-06-03 15:43:20,408  INFO [main] OrangeDriver:163 - Verify the user is landed on Home Page after succefully login
+ 2021-06-03 15:43:20,724  INFO [main] ExcelHandler:24 - Get locator for HomePage_Text in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:43:20,757  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:43:20,757  INFO [main] WiniumHandler:150 - Get webelement xpath locator for //li[contains(text(),'Dashboard')]
+ 2021-06-03 15:43:20,878  INFO [main] OrangeDriver:113 - Close the Orange CRM web application
+ 2021-06-03 15:43:21,987  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
+ 2021-06-03 15:43:22,014  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
+ 2021-06-03 15:50:16,205  INFO [main] OrangeDriver:74 - AppTestData:{HomePage=Dashboard, LoginPage_Title=OrangeHRM Demo, Password=admin123, TestCaseId=TC001_Orange_CRM_LoginWithvalidCredentials, Username=admin, Validation_Popup=}
+ 2021-06-03 15:50:16,207  INFO [main] OrangeDriver:66 - SCENARIO STARTED ####TC001_Orange_CRM_LoginWithvalidCredentials
+ 2021-06-03 15:50:27,468  INFO [main] OrangeDriver:163 - Verify user is on Login Page
+ 2021-06-03 15:50:27,653  INFO [main] ExcelHandler:24 - Get locator for Login_Page_Text in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:50:27,700  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:50:27,700  INFO [main] WiniumHandler:150 - Get webelement xpath locator for //h3[contains(text(),'OrangeHRM Demo')]
+ 2021-06-03 15:50:27,813  INFO [main] OrangeDriver:130 - Clear the Username from CRM login page which is already there in field and Enter new one
+ 2021-06-03 15:50:27,977  INFO [main] ExcelHandler:24 - Get locator for Username_Element in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:50:28,006  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:50:28,006  INFO [main] WiniumHandler:150 - Get webelement id locator for txtUsername
+ 2021-06-03 15:50:28,160  INFO [main] OrangeDriver:130 - Clear the Password from CRM login page which is already there in field and Enter new one
+ 2021-06-03 15:50:28,614  INFO [main] ExcelHandler:24 - Get locator for Password_Element in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:50:28,638  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:50:28,639  INFO [main] WiniumHandler:150 - Get webelement id locator for txtPassword
+ 2021-06-03 15:50:28,789  INFO [main] OrangeDriver:146 - Click on Login Button
+ 2021-06-03 15:50:29,129  INFO [main] ExcelHandler:24 - Get locator for Login in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:50:29,154  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:50:29,154  INFO [main] WiniumHandler:150 - Get webelement id locator for btnLogin
+ 2021-06-03 15:50:35,906  INFO [main] OrangeDriver:163 - Verify the user is landed on Home Page after succefully login
+ 2021-06-03 15:50:36,771  INFO [main] ExcelHandler:24 - Get locator for HomePage_Text in ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx
+ 2021-06-03 15:50:36,797  INFO [main] WiniumHandler:149 - Searching web locator in sheet ./ORANGE_CRM/Orange/DriverFile/UIMAP.xlsx//WebLocator
+ 2021-06-03 15:50:36,798  INFO [main] WiniumHandler:150 - Get webelement xpath locator for //li[contains(text(),'Dashboard')]
+ 2021-06-03 15:50:36,854  INFO [main] OrangeDriver:113 - Close the Orange CRM web application
+ 2021-06-03 15:50:37,887  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC002_Orange_CRM_LoginWithInvalidCredentials
+ 2021-06-03 15:50:37,912  INFO [main] OrangeDriver:62 - SCENARIO SKIPPED ####TC003_Orange_CRM_LoginAsDifferentUser
  
